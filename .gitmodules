@@ -1,3 +1,0 @@
-[submodule "demo-integration-repo"]
-	path = test-demo-integration-repo
-	url = https://github.com/meetrajsinh-crest/demo-integration-repo
