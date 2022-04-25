@@ -8,5 +8,4 @@ steps:
   image: python
   commands:
   - python3 -m pip install datadog-checks-dev[cli]
-  - python3 -m ddev release build crest_data_systems_dell_emc_isilon"
-  
+  - python3 -m ddev release build crest_data_systems_dell_emc_isilon
