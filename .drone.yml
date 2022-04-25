@@ -8,8 +8,11 @@ steps:
   image: python
   commands:
   - python3 -m venv python-env
-  - pwd
+
+- name: build-dd1
+  image: ubuntu
+  commands:
   - ls
-  - sudo ./python-env/bin/activate
+  - source python-env/bin/activate
   - pip install datadog-checks-dev[cli]
   - ddev release build crest_data_systems_dell_emc_isilon
