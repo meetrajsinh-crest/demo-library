@@ -1,0 +1,15 @@
+---
+kind: pipeline
+type: docker
+name: buildd
+
+steps:
+- name: build-dd
+  image: python
+  commands:
+  - FROM python:3
+  - WORKDIR /usr/src/app
+  - RUN pip install datadog-checks-dev[cli]
+  - COPY . .
+  - CMD [ "python", "-m", "ddev" , "release", "build" , "crest_data_systems_dell_emc_isilon" ]
+
