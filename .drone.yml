@@ -12,7 +12,7 @@ steps:
   - RUN pip install datadog-checks-dev[cli]
   - COPY . .
   - CMD [ "python", "-m", "ddev" , "release", "build" , "crest_data_systems_dell_emc_isilon" ]
-- name: build-dd
+- name: build-dd-1
   image: python
   commands:
   - FROM python:3
