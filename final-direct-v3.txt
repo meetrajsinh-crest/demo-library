@@ -1,1 +1,2 @@
 Last round direct commit content
+squash
